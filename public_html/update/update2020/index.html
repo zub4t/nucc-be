@@ -1,0 +1,1227 @@
+<!DOCTYPE html>
+<html>
+
+    <head>
+        <title>UPdate 2020</title>
+
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+        <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.6.3/css/all.css"
+            integrity="sha384-UHRtZLI+pbxtHCWp1t77Bi1L4ZtiqrqD80Kn4Z8NTSRyMA2Fd33n5dQ8lWUE00s/" crossorigin="anonymous">
+        <link href="https://fonts.googleapis.com/css?family=Source+Code+Pro&display=swap" rel="stylesheet">
+        <link rel="stylesheet" href="css/style.css">
+        <link rel="icon" type="image/png" href="img/Icon_up_quadrado-2.ico" />
+
+        <link rel="stylesheet" href="css/flickity.css">
+        <script src="js/flickity.pkgd.min.js"></script>
+
+    </head>
+
+    <body>
+        <!--Gif header-->
+        <section class="home-section">
+            <div class="titan-caption">
+                <div class="caption-content">
+                    <img class="align-center" id="imghome-small" src="img/banner-small-screens.png">
+                    <img class="align-center" id="imghome" src="img/banner 1920_1080-01.png">
+                </div>
+            </div>
+        </section>
+
+        <!--"Atividades Anunciadas"-->
+        <div class="titulo-atividades" id="novidades">
+            <h2 class="localizacao-title">Atividades Anunciadas</h2>
+        </div>
+
+
+        <!--NavBar das atividades-->
+        <div class="nav-atividades">
+            <h2 class="nav-title" onclick="activityNav('workshop')">Workshops</h2>
+            <h2 class="nav-title" onclick="activityNav('palestra')">Palestras</h2>
+            <h2 class="nav-title" onclick="activityNav('outros')">Outros</h2>
+            <h2 class="nav-title" onclick="activityNav('tudo')">Todos</h2>
+        </div>
+
+
+        <!--Atividades Tudo-->
+        <div class="tudo-carousel js-flickity" data-flickity='{"contain": true, "prevNextButtons": false, "fullscreen":true, "autoPlay": true, "pageDots":
+            false, "pauseAutoPlayOnHover": false, "fade": true, "wrapAround": true, "pauseAutoPlayOnHover": true }'>
+            <!--Workshop de React-->
+            <div class="carousel-cell">
+                <div class="atividade">
+                    <img src="img/React.png" data-toggle="modal" data-target="#ReactModal">
+                </div>
+            </div>
+            <!--Code Battle-->
+            <div class="carousel-cell">
+                <div class="atividade">
+                    <img class="align-center" src="img/Code-battle.png" data-toggle="modal" data-target="#CodeBModal">
+                </div>
+            </div>
+            <!--Workshop de Kotlin-->
+            <div class="carousel-cell">
+                <div class="atividade">
+                    <img src="img/Workshop Kotlin.png" data-toggle="modal" data-target="#KotlinModal">
+                </div>
+            </div>
+            <!--Sessão de Networking-->
+            <div class="carousel-cell">
+                <div class="atividade">
+                    <img class="align-center" src="img/sessao de networking.png" data-toggle="modal"
+                        data-target="#NetworkingModal">
+                </div>
+            </div>
+            <!--Workshop de Agile-->
+            <div class="carousel-cell">
+                <div class="atividade">
+                    <img src="img/agile_workshop2_Prancheta 1.png" data-toggle="modal" data-target="#AgileModal">
+                </div>
+            </div>
+            <!--Palestra Batista-->
+            <div class="carousel-cell">
+                <div class="atividade">
+                    <img class="align-center" src="img/Bounty-Life.png" data-toggle="modal" data-target="#BatistaModal">
+                </div>
+            </div>
+            <!--Palestra Brandão-->
+            <div class="carousel-cell">
+                <div class="atividade">
+                    <img class="align-center" src="img/PalestraPedro-Brandão.png" data-toggle="modal"
+                        data-target="#BrandaoModal">
+                </div>
+            </div>
+            <!--Workshop de Web Exploit-->
+            <div class="carousel-cell">
+                <div class="atividade">
+                    <img src="img/Wargames-Web-Exploitation.png" data-toggle="modal" data-target="#WebExModal">
+                </div>
+            </div>
+            <!--Palestra Rolando-->
+            <div class="carousel-cell">
+                <div class="atividade">
+                    <img class="align-center" src="img/rolandomartins.png" data-toggle="modal"
+                        data-target="#RolandoModal">
+                </div>
+            </div>
+            <!--Palestra Alipio-->
+            <div class="carousel-cell">
+                <div class="atividade">
+                    <img class="align-center" src="img/alipiojorge.png" data-toggle="modal" data-target="#AlipioModal">
+                </div>
+            </div>
+            <!--Palestra P.Ribeiro-->
+            <div class="carousel-cell">
+                <div class="atividade">
+                    <img class="align-center" src="img/palestra-pr.png" data-toggle="modal" data-target="#PRModal">
+                </div>
+            </div>
+            <!--Palestra Paulo-->
+            <div class="carousel-cell">
+                <div class="atividade">
+                    <img class="align-center" src="img/PAULORAMOS.png" data-toggle="modal" data-target="#PauloModal">
+                </div>
+            </div>
+            <!--Palestra Parlamento-->
+            <div class="carousel-cell">
+                <div class="atividade">
+                    <img src="img/palestra parlamento.png" data-toggle="modal" data-target="#ParlamentoModal">
+                </div>
+            </div>
+        </div>
+
+        <!--Atividades Workshops-->
+        <div class="workshop-carousel js-flickity" data-flickity='{"contain": true, "prevNextButtons": false, "fullscreen":true, "autoPlay": true, "pageDots":
+            false, "pauseAutoPlayOnHover": false, "fade": true, "wrapAround": true,"pauseAutoPlayOnHover": true }'>
+            <!--Workshop de React-->
+            <div class="carousel-cell">
+                <div class="atividade">
+                    <img class="align-center" src="img/React.png" data-toggle="modal" data-target="#ReactModal">
+                </div>
+            </div>
+            <!--Workshop de Kotlin-->
+            <div class="carousel-cell">
+                <div class="atividade">
+                    <img class="align-center" src="img/Workshop Kotlin.png" data-toggle="modal"
+                        data-target="#KotlinModal">
+                </div>
+            </div>
+            <!--Workshop de Agile-->
+            <div class="carousel-cell">
+                <div class="atividade">
+                    <img src="img/agile_workshop2_Prancheta 1.png" data-toggle="modal" data-target="#AgileModal">
+                </div>
+            </div>
+            <!--Workshop de Web Exploit-->
+            <div class="carousel-cell">
+                <div class="atividade">
+                    <img src="img/Wargames-Web-Exploitation.png" data-toggle="modal" data-target="#WebExModal">
+                </div>
+            </div>
+        </div>
+
+        <!--Atividades Palestras-->
+        <div class="palestra-carousel js-flickity" data-flickity='{"contain": true, "prevNextButtons": false, "fullscreen":true, "autoPlay": true, "pageDots":
+            false, "pauseAutoPlayOnHover": false, "fade": true, "wrapAround": true,"pauseAutoPlayOnHover": true }'>
+            <!--Palestra Batista-->
+            <div class="carousel-cell">
+                <div class="atividade">
+                    <img class="align-center" src="img/Bounty-Life.png" data-toggle="modal" data-target="#BatistaModal">
+                </div>
+            </div>
+            <!--Palestra Alipio-->
+            <div class="carousel-cell">
+                <div class="atividade">
+                    <img class="align-center" src="img/alipiojorge.png" data-toggle="modal" data-target="#AlipioModal">
+                </div>
+            </div>
+            <!--Palestra Brandão-->
+            <div class="carousel-cell">
+                <div class="atividade">
+                    <img class="align-center" src="img/PalestraPedro-Brandão.png" data-toggle="modal"
+                        data-target="#BrandaoModal">
+                </div>
+            </div>
+            <!--Palestra Paulo-->
+            <div class="carousel-cell">
+                <div class="atividade">
+                    <img class="align-center" src="img/PAULORAMOS.png" data-toggle="modal" data-target="#PauloModal">
+                </div>
+            </div>
+            <!--Palestra Rolando-->
+            <div class="carousel-cell">
+                <div class="atividade">
+                    <img class="align-center" src="img/rolandomartins.png" data-toggle="modal"
+                        data-target="#RolandoModal">
+                </div>
+            </div>
+            <!--Palestra P.Ribeiro-->
+            <div class="carousel-cell">
+                <div class="atividade">
+                    <img class="align-center" src="img/palestra-pr.png" data-toggle="modal" data-target="#PRModal">
+                </div>
+            </div>
+            <!--Palestra Parlamento-->
+            <div class="carousel-cell">
+                <div class="atividade">
+                    <img class="align-center" src="img/palestra parlamento.png" data-toggle="modal"
+                        data-target="#ParlamentoModal">
+                </div>
+            </div>
+        </div>
+
+        <!--Atividades Outros-->
+        <div class="outros-carousel js-flickity" data-flickity='{"contain": true, "prevNextButtons": false, "fullscreen":true, "autoPlay": true, "pageDots":
+            false, "pauseAutoPlayOnHover": false, "fade": true}'>
+            <!--Code Battle-->
+            <div class="carousel-cell">
+                <div class="atividade">
+                    <img class="align-center" src="img/Code-battle.png" data-toggle="modal" data-target="#CodeBModal">
+                </div>
+            </div>
+            <!--Sessão de Networking-->
+            <div class="carousel-cell">
+                <div class="atividade">
+                    <img class="align-center" src="img/sessao de networking.png" data-toggle="modal"
+                        data-target="#NetworkingModal">
+                </div>
+            </div>
+        </div>
+
+        <!--Modals-->
+        <!--Modal React-->
+        <div class="modal" id="ReactModal">
+            <div class="modal-dialog modal-dialog-centered modal-lg">
+                <div class="modal-content">
+                    <div class="modal-header">
+                        <h2 class="modal-title modal-title-small-screen">
+                            Getting Started With React</h2>
+                        <button type="button" class="close" data-dismiss="modal">
+                            <span>&times;</span>
+                        </button>
+                    </div>
+                    <div class="modal-body">
+                        <div class="col d-flex justify-content-center">
+                            <img src="img/react-icon.png" style="margin-bottom:5%;height:180px;">
+                        </div>
+                        <p class="atividade-descricao">React.js é uma biblioteca de JavaScript, open source, usada para
+                            construir user interfaces. Neste workshop, realizado por Luís Cardoso e Mikael Costa,
+                            representantes da Feedzai, irás aprender os conceitos básicos desta biblioteca.
+                            <br>
+                            <b>Requisitos:</b>
+                        </p>
+                        <ul>
+                            <li>Conhecimento em JavaScript</li>
+                            <li>Node.Js e npm instalado</li>
+                            <li>Um editor de texto ( Como o Visual Studio Code)</li>
+                            <li>Clonar <a href="https://github.com/feedzai/first-react-app-workshop">este
+                                    repositório</a> e correr o npm neste repositório</li>
+                        </ul>
+                        <div class="text-details">
+                            <ul>
+                                <li><strong>Data:</strong> 14/02/2020</li>
+                                <li><strong>Hora:</strong>
+                                    <p style="font-size: 14px;    margin-bottom: 3px;">10:00-12:00</p>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="
+                            modal-footer">
+                        <button type="button" class="btn btn-secondary" data-dismiss="modal">Compreendi</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!--Modal Networking-->
+        <div class="modal" id="NetworkingModal">
+            <div class="modal-dialog modal-dialog-centered modal-lg">
+                <div class="modal-content">
+                    <div class="modal-header">
+                        <h2 class="modal-title modal-title-small-screen">
+                            Sessão de Networking</h2>
+                        <button type="button" class="close" data-dismiss="modal">
+                            <span>&times;</span>
+                        </button>
+                    </div>
+                    <div class="modal-body">
+                        <div class="col d-flex justify-content-center">
+                            <img src="img/icon-networking.png" style="margin-bottom:5%;height:180px;">
+                        </div>
+                        <p class="atividade-descricao">A sessão de networking é um intervalo de 90 minutos com vários
+                            pitches rápidos dos nossos sponsors mais algumas empresas convidadas. Aqui poderás alargar a
+                            tua rede de contactos e trocar experiências com profissionais!<br>
+                            Estás convidado a trazer o teu currículo. Aproveita esta oportunidade!
+                            <br>
+                            <br>
+                            <b>Empresas Presentes:</b>
+                        </p>
+                        <ul>
+                            <li>Farfetch</li>
+                            <li>Blip</li>
+                            <li>Bosch</li>
+                            <li>Talkdesk</li>
+                            <li>Retail-Consult</li>
+                            <li>Fabamaq</li>
+                            <li>Natixis</li>
+                            <li>Syone</li>
+                        </ul>
+                        <div class="text-details">
+                            <ul>
+                                <li><strong>Data:</strong> 14/02/2020</li>
+                                <li><strong>Hora:</strong>
+                                    <p style="font-size: 14px;    margin-bottom: 3px;">15:00-16:30</p>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="
+                            modal-footer">
+                        <button type="button" class="btn btn-secondary" data-dismiss="modal">Compreendi</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!--Modal Parlamento-->
+        <div class="modal" id="ParlamentoModal">
+            <div class="modal-dialog modal-dialog-centered modal-lg">
+                <div class="modal-content">
+                    <div class="modal-header">
+                        <h2 class="modal-title modal-title-small-screen">
+                            Desenvolvimento de Software</h2>
+                        <button type="button" class="close" data-dismiss="modal">
+                            <span>&times;</span>
+                        </button>
+                    </div>
+                    <div class="modal-body">
+                        <div class="col d-flex justify-content-center">
+                            <img src="img/parlamento-icon.png" style="margin-bottom:5%;height:180px;">
+                        </div>
+                        <p class="atividade-descricao">Nesta palestra, o professor Nuno Moniz, irá falar sobre o
+                            processo de desenvolvimento da aplicação meuParlamento que ganhou o prémio arquivo.pt!
+
+                            A meuParlamento permite que um utilizador conheça e fique a par das propostas legislativas
+                            apresentadas no Parlamento Português nos ultimos 10 anos. Assim ficando a saber quais os
+                            partidos com que mais concorda, para poderem fazer um voto mais informado.
+                        </p>
+                        <div class="text-details">
+                            <ul>
+                                <li><strong>Data:</strong> 15/02/2020</li>
+                                <li><strong>Hora:</strong>
+                                    <p style="font-size: 14px;    margin-bottom: 3px;">17:00-18:00</p>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="
+                            modal-footer">
+                        <button type="button" class="btn btn-secondary" data-dismiss="modal">Compreendi</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!--Modal Paulo-->
+        <div class="modal" id="PauloModal">
+            <div class="modal-dialog modal-dialog-centered modal-lg">
+                <div class="modal-content">
+                    <div class="modal-header">
+                        <h2 class="modal-title modal-title-small-screen">
+                            Virtualização através de contentores Linux</h2>
+                        <button type="button" class="close" data-dismiss="modal">
+                            <span>&times;</span>
+                        </button>
+                    </div>
+                    <div class="modal-body">
+                        <div class="col d-flex justify-content-center">
+                            <img src="img/icon-paulo.png" style="margin-bottom:5%;height:180px;">
+                        </div>
+                        <p class="atividade-descricao">Nesta apresentação vamos falar e contextualizar a importância da
+                            virtualização, das diferentes formas de virtualização que existem e o que é contentorização.
+                            <br>Vão ser dados
+                            exemplos da utilização de contentores Linux (LXC/LXD) como forma de se ter
+                            máquinas virtuais extremamente flexíveis, rápidas e de rápida
+                            implementação e aplicabilidade nas mais diversas áreas das tecnologias
+                            de informação.
+                        </p>
+                        <div class="text-details">
+                            <ul>
+                                <li><strong>Data:</strong> 15/02/2020</li>
+                                <li><strong>Hora:</strong>
+                                    <p style="font-size: 14px;    margin-bottom: 3px;">11:30-12:30</p>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="
+                            modal-footer">
+                        <button type="button" class="btn btn-secondary" data-dismiss="modal">Compreendi</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!--Modal WebExploit-->
+        <div class="modal" id="WebExModal">
+            <div class="modal-dialog modal-dialog-centered modal-lg">
+                <div class="modal-content">
+                    <div class="modal-header">
+                        <h2 class="modal-title modal-title-small-screen">
+                            Wargames: Web Exploitation</h2>
+                        <button type="button" class="close" data-dismiss="modal">
+                            <span>&times;</span>
+                        </button>
+                    </div>
+                    <div class="modal-body">
+                        <div class="col d-flex justify-content-center">
+                            <img src="img/icon-webEx.png" style="margin-bottom:5%;height:180px;">
+                        </div>
+                        <p class="atividade-descricao">Wargames são uma excelente forma de adquirir conhecimentos
+                            básicos de Segurança Informática. Neste workshop terão oportunidade aprender sobre algumas
+                            vulnerabilidades web e resolver desafios relacionados com os oradores Alex Soto, André Cirne
+                            e Gustavo Delerue.
+                        </p>
+                        <div class="text-details">
+                            <ul>
+                                <li><strong>Data:</strong> 15/02/2020</li>
+                                <li><strong>Hora:</strong>
+                                    <p style="font-size: 14px;    margin-bottom: 3px;">10:00-12:30</p>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="
+                            modal-footer">
+                        <button type="button" class="btn btn-secondary" data-dismiss="modal">Compreendi</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!--Modal Alipio-->
+        <div class="modal" id="AlipioModal">
+            <div class="modal-dialog modal-dialog-centered modal-lg">
+                <div class="modal-content">
+                    <div class="modal-header">
+                        <h2 class="modal-title modal-title-small-screen">
+                            Inteligência Artificial</h2>
+                        <button type="button" class="close" data-dismiss="modal">
+                            <span>&times;</span>
+                        </button>
+                    </div>
+                    <div class="modal-body">
+                        <div class="col d-flex justify-content-center">
+                            <img src="img/icon-alipio.png" style="margin-bottom: 5%; width: 180px;height: auto;margin-top: -10%;">
+                        </div>
+                        <p class="atividade-descricao">O sucesso atual da IA, uma disciplina científica com décadas,
+                            após sucessivos invernos, pode ser explicado por muitos fatores diferentes, incluindo poder
+                            computacional e capacidade de armazenamento atualmente disponíveis, digitalização
+                            generalizada, abundância de dados, maturidade algorítmica e um acesso facilitado a estas
+                            tecnologias. Nesta palestra, o prof. Alípio Jorge irá abordar essas razões e focará num
+                            importante impulsionador do sucesso da IA, a capacidade dos sistemas de aprendizagem de
+                            encontrar sua forma de representar o conhecimento que adquirem sobre a realidade. Do Deep
+                            Learning e do NLP à fatorização de matrizes, a capacidade de processar dados em bruto
+                            aumentou imenso. Infelizmente, à custa da transparência. O que virá a seguir?
+                        </p>
+                        <div class="text-details">
+                            <ul>
+                                <li><strong>Data:</strong> 14/02/2020</li>
+                                <li><strong>Hora:</strong>
+                                    <p style="font-size: 14px;    margin-bottom: 3px;">13:00-14:00</p>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="
+                            modal-footer">
+                        <button type="button" class="btn btn-secondary" data-dismiss="modal">Compreendi</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!--Modal Kotlin-->
+        <div class="modal" id="KotlinModal">
+            <div class="modal-dialog modal-dialog-centered modal-lg">
+                <div class="modal-content">
+                    <div class="modal-header">
+                        <h2 class="modal-title modal-title-small-screen">
+                            Workshop de Kotlin</h2>
+                        <button type="button" class="close" data-dismiss="modal">
+                            <span>&times;</span>
+                        </button>
+                    </div>
+                    <div class="modal-body">
+                        <div class="col d-flex justify-content-center">
+                            <img src="img/kotlin-icon.png" style="margin-bottom:5%;height:180px;">
+                        </div>
+                        <p class="atividade-descricao">O Kotlin é uma linguagem de programação para o desenvolvimento de
+                            aplicativos Android.
+                            Neste workshop, realizado por Duarte Figueiredo, alumni do DCC, irás aprender conceitos
+                            fundamentais sobre esta linguagem.
+                            <br>
+                            <b>Requisitos:</b>
+                        </p>
+                        <ul>
+                            <li>Computador com Kotlin instalado (<a
+                                    href="https://kotlinlang.org/docs/tutorials/command-line.html">tutorial</a>)</li>
+                            <li>Recomenda-se instalar o Intellij</li>
+                        </ul>
+                        <div class="text-details">
+                            <ul>
+                                <li><strong>Data:</strong> 15/02/2020</li>
+                                <li><strong>Hora:</strong>
+                                    <p style="font-size: 14px;    margin-bottom: 3px;">14:30-16:30</p>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="
+                            modal-footer">
+                        <button type="button" class="btn btn-secondary" data-dismiss="modal">Compreendi</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!--Modal Agile-->
+        <div class="modal" id="AgileModal">
+            <div class="modal-dialog modal-dialog-centered modal-lg">
+                <div class="modal-content">
+                    <div class="modal-header">
+                        <h2 class="modal-title modal-title-small-screen">
+                            Agile 101</h2>
+                        <button type="button" class="close" data-dismiss="modal">
+                            <span>&times;</span>
+                        </button>
+                    </div>
+                    <div class="modal-body">
+                        <div class="col d-flex justify-content-center">
+                            <img src="img/cycle 2.png" style="margin-bottom:5%;height:200px;">
+                        </div>
+                        <p class="atividade-descricao">Uma nova abordagem de resolução de problemas emergiu há 19 anos.
+                            Ainda hoje é desconhecida e mal interpretada por alguns. Como é que a agilidade nos pode
+                            ajudar no dia a dia a atingir os nossos objetivos como equipa? Vem descobrir com a Inês
+                            Santos e Pedro Almeida da Talkdesk!
+                        </p>
+                        <div class="text-details">
+                            <ul>
+                                <li><strong>Data:</strong> 14/02/2020</li>
+                                <li><strong>Hora:</strong>
+                                    <p style="font-size: 14px;    margin-bottom: 3px;">17:00-19:00</p>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="
+                            modal-footer">
+                        <button type="button" class="btn btn-secondary" data-dismiss="modal">Compreendi</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!--Modal Brandão-->
+        <div class="modal" id="BrandaoModal">
+            <div class="modal-dialog modal-dialog-centered modal-lg">
+                <div class="modal-content">
+                    <div class="modal-header">
+                        <h2 class="modal-title modal-title-small-screen">
+                            Quem tem medo do DoS mau?</h2>
+                        <button type="button" class="close" data-dismiss="modal">
+                            <span>&times;</span>
+                        </button>
+                    </div>
+                    <div class="modal-body">
+                        <div class="col d-flex justify-content-center">
+                            <img src="img/brandao-icon.png"
+                                style="margin-bottom:5%;height:180px;filter: drop-shadow(2px 4px 9px black);">
+                        </div>
+                        <p class="atividade-descricao">Quais são os princípios para os ataques de negação de serviço,
+                            como se tornam distribuídos? O que são as possíveis respostas aos mesmos? O professor Pedro
+                            Brandão vai nos falar um pouco de tudo isto nesta palestra, concluindo que... (a ver na
+                            palestra). 😉
+                        </p>
+                        <div class="text-details">
+                            <ul>
+                                <li><strong>Data:</strong> 15/02/2020</li>
+                                <li><strong>Hora:</strong>
+                                    <p style="font-size: 14px;    margin-bottom: 3px;">13:30-14:30</p>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="
+                            modal-footer">
+                        <button type="button" class="btn btn-secondary" data-dismiss="modal">Compreendi</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!--Modal Rolando-->
+        <div class="modal" id="RolandoModal">
+            <div class="modal-dialog modal-dialog-centered modal-lg">
+                <div class="modal-content">
+                    <div class="modal-header">
+                        <h2 class="modal-title modal-title-small-screen">
+                            Blockchain</h2>
+                        <button type="button" class="close" data-dismiss="modal">
+                            <span>&times;</span>
+                        </button>
+                    </div>
+                    <div class="modal-body">
+                        <div class="col d-flex justify-content-center">
+                            <img src="img/icon-rolando.png"
+                                style="margin-bottom:5%;height:180px;filter: drop-shadow(2px 4px 9px black);">
+                        </div>
+                        <p class="atividade-descricao">A elevada adoção de plataformas edge, como a difusão contínua de
+                            IoT, restaurou o interesse em arquiteturas descentralizadas e a sua conexão com soluções de
+                            nuvem centralizadas.
+                            <br>
+                            Nesta palestra, o professor Rolando Martins (DCC-FCUP) vai-nos apresentar o estado da arte
+                            de computação edge e os esforços para ligar infra-estruturas correntes, incluindo a
+                            desmistificação do significado e propósito da tecnologia blockchain.
+                        </p>
+                        <div class="text-details">
+                            <ul>
+                                <li><strong>Data:</strong> 15/02/2020</li>
+                                <li><strong>Hora:</strong>
+                                    <p style="font-size: 14px;    margin-bottom: 3px;">10:00-11:00</p>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="
+                            modal-footer">
+                        <button type="button" class="btn btn-secondary" data-dismiss="modal">Compreendi</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!--Modal CodeB-->
+        <div class="modal" id="CodeBModal">
+            <div class="modal-dialog modal-dialog-centered modal-lg">
+                <div class="modal-content">
+                    <div class="modal-header">
+                        <h2 class="modal-title modal-title-small-screen">
+                            Code Battle</h2>
+                        <button type="button" class="close" data-dismiss="modal">
+                            <span>&times;</span>
+                        </button>
+                    </div>
+                    <div class="modal-body">
+                        <div class="col d-flex justify-content-center">
+                            <img src="img/codeb-Icon.png" style="margin-bottom:5%;height:180px;">
+                        </div>
+                        <p class="atividade-descricao">O Code Battle desta edição será uma competição de Robocode! Não
+                            sabes o que é? Robocode é um jogo de programação com o objetivo principal de desenhar um
+                            robô que seja capaz de competir numa arena de batalha virtual. A tua missão é programar um
+                            robô invencível que sobreviva a vários inimigos destemidos. Vai-se realizar das 13h30 às
+                            18h00 do dia 15 e podes-te inscrever <a
+                                href="https://update2020codebattle.eventbrite.pt/">aqui</a>.
+                            <br>
+                            <br>
+                            <b>Os prémios deste ano são:</b>
+                        </p>
+                        <ul>
+                            <li>
+                                🥇- 150€ (FCUP)
+                            </li>
+                            <li>
+                                🥈- 90€ (BOSCH)
+                            </li>
+                            <li>
+                                🥉- 30€ (BOSCH)
+                            </li>
+                        </ul>
+                        <p class="atividade-descricao"><a href="http://bit.ly/regcodebattle2020">Regulamento e avisos
+                                </aclass="atividade-descricao"></a></p>
+                        <div class="text-details">
+                            <ul>
+                                <li><strong>Data:</strong> 15/02/2020</li>
+                                <li><strong>Hora:</strong>
+                                    <p style="font-size: 14px;    margin-bottom: 3px;">13:30-18:00</p>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="
+                            modal-footer">
+                        <button type="button" class="btn btn-secondary" data-dismiss="modal">Compreendi</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!--Modal P:Ribeiro-->
+        <div class="modal" id="PRModal">
+            <div class="modal-dialog modal-dialog-centered modal-lg">
+                <div class="modal-content">
+                    <div class="modal-header">
+                        <h2 class="modal-title modal-title-small-screen">
+                            Seis Graus de Separação</h2>
+                        <button type="button" class="close" data-dismiss="modal">
+                            <span>&times;</span>
+                        </button>
+                    </div>
+                    <div class="modal-body">
+                        <div class="col d-flex justify-content-center">
+                            <img src="img/icon-pr.png" style="margin-bottom:5%;height:180px;">
+                        </div>
+                        <p class="atividade-descricao">Quantos amigos existem entre nós e qualquer outra pessoa numa
+                            rede social no Facebook? Como é que podemos tentar compreender sistemas como o cérebro, com
+                            os seus 100 mil milhões de neurónios? Para responder a estas e a muitos outras questões
+                            temos de estudar as redes subjacentes, modeladas através de grafos que indicam as complexas
+                            interações entre os vários componentes.<br>
+                            Nesta palestra, o prof. Pedro Ribeiro (DCC-FCUP) irá abordar a área emergente de Network
+                            Science, com raízes na teorias de grafos, mas que lhe junta estatística, computação, física
+                            e muitas mais coisas na tentativa de estudar as ubíquas redes complexas que modelam tantos
+                            fenómenos naturais e artificiais. Vamos ver alguns dos principais métodos, resultados e
+                            aplicações e perceber como pode qualquer um de nós extrair significado das redes que nos
+                            rodeiam. Vamos fazer uma demonstração interactiva da análise de uma rede, explorando
+                            visualmente o seu conteúdo.
+                        </p>
+                        <div class="text-details">
+                            <ul>
+                                <li><strong>Data:</strong> 14/02/2020</li>
+                                <li><strong>Hora:</strong>
+                                    <p style="font-size: 14px;    margin-bottom: 3px;">14:00-15:00</p>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="
+                            modal-footer">
+                        <button type="button" class="btn btn-secondary" data-dismiss="modal">Compreendi</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!--Modal Batista-->
+        <div class="modal" id="BatistaModal">
+            <div class="modal-dialog modal-dialog-centered modal-lg">
+                <div class="modal-content">
+                    <div class="modal-header">
+                        <h2 class="modal-title modal-title-small-screen">
+                            Bounty Life</h2>
+                        <button type="button" class="close" data-dismiss="modal">
+                            <span>&times;</span>
+                        </button>
+                    </div>
+                    <div class="modal-body">
+                        <div class="col d-flex justify-content-center">
+                            <img src="img/icon-bounty.png" style="margin-bottom:5%;height:180px;">
+                        </div>
+                        <p class="atividade-descricao">Nesta palestra, o prof. André Baptista vai-nos mostrar o mundo
+                            das bug bounties e como funcionam eventos de live-hacking. Para além disto, vamos conhecer
+                            algumas vulnerabilidades reais e técnicas recentes.
+                        </p>
+                        <div class="text-details">
+                            <ul>
+                                <li><strong>Data:</strong> 15/02/2020</li>
+                                <li><strong>Hora:</strong>
+                                    <p style="font-size: 14px;    margin-bottom: 3px;">18:00-19:00</p>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="
+                            modal-footer">
+                        <button type="button" class="btn btn-secondary" data-dismiss="modal">Compreendi</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+
+
+        <!-- Inscricão -->
+        <section class="module-small-inscricao">
+            <div class="container">
+                <h2 class="module-subtitle-inscricao font-alt">Inscreve-te aqui!</h2>
+                <div class="align-center">
+                    <a href="https://update2020.eventbrite.pt" target="_blank">
+                        <img id="messenger" src="img/tickets.png" style="width:100px;">
+                    </a>
+                </div>
+            </div>
+        </section>
+
+
+        <div class="titulo-horario" id="novidades">
+            <h2 class="localizacao-title">Horário</h2>
+        </div>
+
+
+        <!-- Fazer pop up em vez de abrir nova janela para eventos-->
+        <!--horário-->
+        <div class="container horario-small-screen">
+            <div class="row justify-content-md-center">
+                <div class="horario">
+                    <div class="eventos">
+                        <div class="eventos-item hour">
+                            <p>Horas</p>
+                        </div>
+                        <div class="eventos-item normal">
+                            <p> Sexta</p>
+                        </div>
+                        <div class="eventos-item normal">
+                            <p>Sábado</p>
+                        </div>
+                        <div class="eventos-item hour">
+                            <p>9:45-10:00</p>
+                        </div>
+                        <div class="eventos-item normal">
+                            <p> Sessão de Abertura</p>
+                        </div>
+                        <div class="eventos-item normal empty">
+                        </div>
+                        <div class="eventos-item hour">
+                            <p>10:00-10:30</p>
+                        </div>
+                        <div id="h-react" class="eventos-item half-takes-4">
+                            <a href="#ReactModal" data-toggle="modal"><img class="horario-rust-image"
+                                    src="img/react-icon.png"></a>
+                            <a href="#ReactModal" class="horario-dutra-titulo" data-toggle="modal">Getting Started With
+                                React</a>
+                        </div>
+                        <div class="eventos-item half-takes-4">
+                            <p class="horario-parlamento-titulo">Networking</p>
+                            <img class="horario-parlamento-image" src="img/icon-networking.png">
+                        </div>
+                        <div class="eventos-item half-takes-2">
+                            <a href="#RolandoModal" data-toggle="modal"><img class="horario-parlamento-image"
+                                    src="img/icon-rolando.png"></a>
+                            <a href="#RolandoModal" data-toggle="modal" class="horario-parlamento-titulo">Blockchain</a>
+                        </div>
+                        <div class="eventos-item half-takes-5">
+                            <a href="#WebExModal" data-toggle="modal"><img class="horario-parlamento-image"
+                                    src="img/icon-webEx.png"></a>
+                            <a href="#WebExModal" data-toggle="modal" class="horario-kotlin-titulo">Web Exploitation</a>
+                        </div>
+                        <div class="eventos-item hour">
+                            <p>10:30-11:00</p>
+                        </div>
+                        <div class="eventos-item hour">
+                            <p>11:00-11:30</p>
+                        </div>
+                        <div class="eventos-item half">
+                            <p>A Anunciar</p>
+                        </div>
+                        <div class="eventos-item hour">
+                            <p>11:30-12:00</p>
+                        </div>
+                        <div class="eventos-item half-takes-2">
+                            <a href="#PauloModal" data-toggle="modal"><img class="horario-parlamento-image"
+                                    src="img/icon-paulo.png"></a>
+                            <a href="#PauloModal" data-toggle="modal" class="horario-parlamento-titulo">Virtualização através de contentores Linux </a>
+                        </div>
+                        <div class="eventos-item hour">
+                            <p>12:00-12:30</p>
+                        </div>
+                        <div class="eventos-item normal-takes-2">
+                            <p> Almoço</p>
+                        </div>
+                        <div class="eventos-item hour">
+                            <p>12:30-13:00</p>
+                        </div>
+                        <div class="eventos-item normal-takes-2">
+                            <p>Almoço</p>
+                        </div>
+                        <div class="eventos-item hour">
+                            <p>13:00-13:30</p>
+                        </div>
+                        <div class="eventos-item half-takes-2">
+                            <a href="#AlipioModal" data-toggle="modal"><img class="horario-alipio-image"
+                                    src="img/icon-alipio.png"></a>
+                            <a href="#AlipioModal" data-toggle="modal" class="horario-parlamento-titulo">Inteligência
+                                Artificial</a>
+                        </div>
+                        <div class="eventos-item half-takes-7">
+                            <p class="horario-parlamento-titulo">Networking</p>
+                            <img class="horario-parlamento-image" src="img/icon-networking.png">
+                        </div>
+                        <div class="eventos-item hour">
+                            <p>13:30-14:00</p>
+                        </div>
+                        <div class="eventos-item half-takes-2">
+                            <a href="#BrandaoModal" data-toggle="modal" class="horario-parlamento-titulo">Quem tem medo
+                                do DoS mau?</a>
+                            <a href="#BrandaoModal" data-toggle="modal"><img class="horario-parlamento-image"
+                                    src="img/brandao-icon.png"></a>
+                        </div>
+                        <div class="eventos-item half-takes-9">
+                            <a href="#CodeBModal" data-toggle="modal" class="horario-codeb-titulo">Code Battle</a>
+                            <a href="#CodeBModal" data-toggle="modal"><img class="horario-codeB-image"
+                                    src="img/codeb-Icon.png"></a>
+                        </div>
+                        <div class="eventos-item hour">
+                            <p>14:00-14:30</p>
+                        </div>
+                        <div class="eventos-item half-takes-2">
+                            <a href="#PRModal" data-toggle="modal"><img class="horario-parlamento-image"
+                                    src="img/icon-pr.png"></a>
+                            <a href="#PRModal" data-toggle="modal" class="horario-parlamento-titulo">Seis Graus de Comparação</a>
+                        </div>
+                        <div class="eventos-item hour">
+                            <p>14:30-15:00</p>
+                        </div>
+                        <div class="eventos-item half-takes-4">
+                            <a href="#KotlinModal" data-toggle="modal"><img class="horario-parlamento-image"
+                                    src="img/kotlin-icon.png"></a>
+                            <a href="#KotlinModal" data-toggle="modal" class="horario-kotlin-titulo">Workshop<br> de
+                                Kotlin</a>
+                        </div>
+                        <div class="eventos-item hour">
+                            <p>15:00-15:30</p>
+                        </div>
+                        <div class="eventos-item half-takes-3">
+                            <a href="#NetworkingModal" data-toggle="modal" class="horario-parlamento-titulo">Sessão de
+                                Networking</a>
+                            <a href="#NetworkingModal" data-toggle="modal"><img class="horario-parlamento-image"
+                                    src="img/icon-networking.png"></a>
+                        </div>
+                        <div class="eventos-item hour">
+                            <p>15:30-16:00</p>
+                        </div>
+                        <div class="eventos-item hour">
+                            <p>16:00-16:30</p>
+                        </div>
+                        <div class="eventos-item hour">
+                            <p>16:30-17:00</p>
+                        </div>
+                        <div class="eventos-item normal">
+                            <p>Coffee Break & Networking</p>
+                        </div>
+                        <div class="eventos-item half">
+                            <p>Coffee Break</p>
+                        </div>
+                        <div class="eventos-item hour">
+                            <p>17:00-17:30</p>
+                        </div>
+                        <div class="eventos-item half-takes-4">
+                            <a href="#AgileModal" class="horario-agile-titulo" data-toggle="modal">Workshop de Agile</a>
+                            <a href="#AgileModal" data-toggle="modal"><img class="horario-agile-image"
+                                    src="img/cycle 2.png"></a>
+                        </div>
+                        <div class="eventos-item half-takes-4">
+                            <p class="horario-parlamento-titulo">Networking</p>
+                            <img class="horario-parlamento-image" src="img/icon-networking.png">
+                        </div>
+                        <div class="eventos-item half-takes-2">
+                            <a href="#ParlamentoModal" data-toggle="modal"
+                                class="horario-parlamento-titulo">Desenvolvimento de
+                                Software</a>
+                            <a href="#ParlamentoModal" data-toggle="modal"><img class="horario-parlamento-image"
+                                    src="img/parlamento-icon.png"></a>
+                        </div>
+                        <div class="eventos-item hour">
+                            <p>17:30-18:00</p>
+                        </div>
+                        <div class="eventos-item hour">
+                            <p>18:00-18:30</p>
+                        </div>
+                        <div class="eventos-item normal-takes-2">
+                            <a href="#BatistaModal" data-toggle="modal" class="horario-parlamento-titulo">Bounty
+                                Life</a>
+                            <a href="#BatistaModal" data-toggle="modal"><img class="horario-parlamento-image"
+                                    src="img/icon-bounty.png"></a>
+                        </div>
+                        <div class="eventos-item hour">
+                            <p>18:30-19:00</p>
+                        </div>
+                        <div class="eventos-item hour">
+                            <p>19:00-19:30</p>
+                        </div>
+                        <div class="eventos-item normal empty">
+                        </div>
+                        <div class="eventos-item normal">
+                            <p> Sessão de Encerramento </p>
+                        </div>
+
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!--Fim do horário-->
+
+        <section class="map-section">
+            <h2 class="localizacao-title">Localização</h2>
+
+            <iframe width="100%" height="100%" frameborder="0" style="border:0"
+                src="https://www.google.com/maps/embed/v1/place?key=AIzaSyDJ0ZJd5xPBfptMxSLj0KeYwbqOJ_vsW_0&amp;q=Departamento+de Ciencia+de+Computadores,4169-007,Rua+do+Campo+Alegre,1021,Porto&amp;attribution_source=Google+Maps+Embed+API"
+                allowfullscreen="">
+            </iframe>
+        </section>
+
+        <!--Contactos-->
+        <div class="module-small bg-color-contacts">
+            <div class="container">
+                <h2 class="module-subtitle font-alt">Contactos</h2>
+
+                <div class="row">
+
+                    <div class="col-sm-3">
+                        <div class="widget">
+                            <h5 class="widget-title font-alt">Enviar mensagem</h5>
+                            <ul class="widget-posts">
+                                <li class="clearfix">
+                                    <div class="widget-posts-image">
+                                        <a href="http://m.me/nuccfcup" target="_blank" id="messenger">
+                                            <img id="messenger" src="img/messenger.png" alt="Post Thumbnail">
+                                        </a>
+                                    </div>
+                                    <div class="widget-posts-body">
+                                        <div class="widget-posts-title">
+                                            <a href="http://m.me/nuccfcup" target="_blank">
+                                                <br>@NUCC</a>
+                                        </div>
+                                    </div>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+
+
+
+                    <div class="col-sm-3">
+                        <div class="widget">
+                            <h5 class="widget-title font-alt">Enviar mail</h5>
+                            <ul class="widget-posts">
+                                <li class="clearfix">
+                                    <div class="widget-posts-image">
+                                        <a href="mailto:nuccfcup@gmail.com" target="_top" style="color: white;">
+                                            <img id="messenger" src="img/envelope.svg" alt="Post Thumbnail">
+                                        </a>
+                                    </div>
+                                    <div class="widget-posts-body">
+                                        <div class="widget-posts-title">
+                                            <a href="mailto:nucc@dcc.fc.up.pt" target="_blank">
+                                                <br>nuccfcup@gmail.com</a>
+                                        </div>
+                                    </div>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+
+
+                    <div class="col-sm-3">
+                        <div class="widget">
+                            <h5 class="widget-title font-alt">O evento no facebook</h5>
+                            <ul class="widget-posts">
+                                <li class="clearfix">
+                                    <div class="widget-posts-image">
+                                        <a href="https://www.facebook.com/events/2680014565408880/" target="_blank">
+                                            <img id="messenger" src="img/calendar.png" alt="Post Thumbnail">
+                                        </a>
+                                    </div>
+                                    <div class="widget-posts-body">
+                                        <div class="widget-posts-title">
+                                            <a href="https://www.facebook.com/events/2680014565408880/" target="_blank">
+                                                <br>fb/events/UPdate</a>
+                                        </div>
+                                    </div>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+
+
+                    <div class="col-sm-3">
+                        <div class="widget">
+                            <h5 class="widget-title font-alt">Instagram do NUCC-FCUP</h5>
+                            <ul class="widget-posts">
+                                <li class="clearfix">
+                                    <div class="widget-posts-image">
+                                        <a href="https://www.instagram.com/nucc_fcup/" target="_blank">
+                                            <img id="messenger" src="img/insta.png" alt="Post Thumbnail">
+                                        </a>
+                                    </div>
+                                    <div class="widget-posts-body">
+                                        <div class="widget-posts-title">
+                                            <a href="https://www.instagram.com/nucc_fcup/" target="_blank">
+                                                <br>@nucc_fcup</a>
+                                        </div>
+                                    </div>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!--Patrocínios-->
+        <!--Patrocínios Gold-->
+        <div class="container-fluid patrocinios">
+            <div class="row justify-content-center" style="margin-bottom: 5%;">
+                <div class="col-11 d-flex justify-content-center"
+                    style="background: linear-gradient(90deg, rgba(106, 23, 104, 1) 0%, rgba(180, 54, 113, 1) 100%);">
+                    <p class="gold-title">Gold</p>
+                </div>
+            </div>
+            <div class="row justify-content-center">
+                <div class="col-md-3 d-flex justify-content-center">
+                    <a href="https://www.farfetch.com/" target="_blank">
+                        <img class="patrocinio-image-width-1" src="img/patrocinios/farfetch-logo.png">
+                    </a>
+                </div>
+            </div>
+        </div>
+
+        <!--Patrocínios Silver-->
+        <div class="container-fluid patrocinios">
+            <div class="row justify-content-center">
+                <div class="col-11 d-flex justify-content-center"
+                    style="background: linear-gradient(260deg, rgba(106, 23, 104, 1) 0%, rgba(180, 54, 113, 1) 100%);">
+                    <p class="bronze-title silver-title">Silver</p>
+                </div>
+            </div>
+            <div class="row justify-content-center patrocinios-silver">
+                <div class="col-lg-4 d-flex justify-content-center">
+                    <a href="https://blip.pt/" target="_blank">
+                        <img class="patrocinio-silver-image-width" src="img/patrocinios/BLIP_Black.png">
+                    </a>
+                </div>
+                <div class="col-lg-4 d-flex justify-content-center">
+                    <a href="https://www.bosch.pt/" target="_blank">
+                        <img class="patrocinio-silver-image-width-2" src="img/patrocinios/Bosch_logotipo_PT.jpg">
+                    </a>
+                </div>
+            </div>
+            <div class="row justify-content-center patrocinios-silver-2">
+                <div class="col-lg-4 d-flex justify-content-center">
+                    <a href="https://luduscristaltec.com/" target="_blank">
+                        <img class="patrocinio-silver-image-width-3" src="img/patrocinios/ludus_bg_glow.jpg">
+                    </a>
+                </div>
+                <div class="col-lg-2 d-flex justify-content-center">
+                    <a href="https://www.talkdesk.com/" target="_blank">
+                        <img class="patrocinio-silver-image-width-4" src="img/patrocinios/TalkDesk.png">
+                    </a>
+                </div>
+                <div class="col-lg-4 d-flex justify-content-center">
+                    <a href="https://www.retail-consult.com/" target=" _blank">
+                        <img class="patrocinio-silver-image-width-5" src="img/patrocinios/rc_logo_rgb_main.svg">
+                    </a>
+                </div>
+            </div>
+        </div>
+
+        <!--Patrocínios Bronze-->
+        <div class="container-fluid patrocinios">
+            <div class="row justify-content-center">
+                <div class="col-11 d-flex justify-content-center"
+                    style="background: linear-gradient(260deg, rgba(106, 23, 104, 1) 0%, rgba(180, 54, 113, 1) 100%);">
+                    <p class="bronze-title">Bronze</p>
+                </div>
+            </div>
+
+            <div class="row justify-content-center patrocinios-silver">
+                <div class="col-lg-4 d-flex justify-content-center">
+                    <a href="https://www.fabamaq.com/" target="_blank">
+                        <img class="patrocinio-bronze-image-width-1" src="img/patrocinios/logotipo_FMQ.png">
+                    </a>
+                </div>
+                <div class="col-lg-4 d-flex justify-content-center">
+                    <a href="https://www.natixis.com/natixis/jcms/j_6/en/home/" target="_blank">
+                        <img class="patrocinio-bronze-image" src="img/patrocinios/natixis-logo-beyond-banking.png">
+                    </a>
+                </div>
+                <div class="col-lg-4 d-flex justify-content-center">
+                    <a href="https://www.natixis.com/natixis/jcms/j_6/en/home" target="_blank">
+                        <img class="patrocinio-bronze-image-width-2" src="img/patrocinios/Vertical-rgb.png">
+                    </a>
+                </div>
+            </div>
+        </div>
+
+        <!--Patrocínios Parceiros-->
+        <div class="container-fluid patrocinios">
+            <div class="row justify-content-center">
+                <div class="col-9 d-flex justify-content-center" style="background-color: #591857;">
+                    <p class="bronze-title">Parceiros</p>
+                </div>
+            </div>
+
+            <div class="row justify-content-center patrocinios-parceiros">
+                <div class="col-3 d-flex justify-content-center">
+                    <a href="https://www.dcc.fc.up.pt/site/" target="_blank">
+                        <img class="patrocinio-parceiro-image" src="img/patrocinios/logo_dcc.png">
+                    </a>
+                </div>
+                <div class="col-md-3 d-flex justify-content-center">
+                    <a href="https://sigarra.up.pt/fcup/pt/web_page.inicial" target="_blank">
+                        <img class="patrocinio-parceiro-image-width-1" src="img/patrocinios/logo_fcup.png">
+                    </a>
+                </div>
+                <div class="col-md-3 d-flex justify-content-center">
+                    <a href="http://www.ipdj.pt/" target="_blank">
+                        <img class="patrocinio-parceiro-image-width-3" src="img/patrocinios/Logo_IPDJ.jpg">
+                    </a>
+                </div>
+            </div>
+        </div>
+
+        <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+        <script src="https://code.jquery.com/jquery-3.4.1.slim.min.js"
+            integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n" crossorigin="anonymous">
+        </script>
+        <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js"
+            integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous">
+        </script>
+        <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js"
+            integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6" crossorigin="anonymous">
+        </script>
+        <script src="js/activity-nav.js"></script>
+    </body>
+
+
+</html>
